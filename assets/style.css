@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: rgb(3, 44, 121) ;
+    --secondary-color: white;
+    --tertiary-color: ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header h1 {
+    margin-left: 50px;
+}
+
+nav ul li {
+    display: inline;
+    text-decoration: none;
+    font-size: 1.25em;
+    margin-right: 70px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--secondary-color)
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid white;
+  }
