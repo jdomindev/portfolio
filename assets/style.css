@@ -35,8 +35,8 @@ header {
     top: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    height: 60px;
+    padding: 20px;
+    height: auto;
     width: 100%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -55,7 +55,9 @@ nav ul li {
     display: inline;
     text-decoration: none;
     font-size: 1.25em;
-    margin-right: 70px;
+    /* margin-right: 70px; */
+    justify-content: end;
+    /* some way to center and space */
 }
 
 nav a {
@@ -75,6 +77,7 @@ nav a:hover {
     justify-content: center;
     width: 100%;
     height: 400px;
+    padding: 20px;
     background: linear-gradient(var(--primary-color), var(--tertiary-color));
 }
 
@@ -106,8 +109,10 @@ nav a:hover {
 
 .text-container {
     display: flex;
+    text-align: center;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    padding-left: 40px;
     border-left: 5px solid var(--primary-color);
     width: 80%;
 }
@@ -183,8 +188,8 @@ footer {
     bottom: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    height: 60px;
+    padding: 20px 0px;
+    height: auto;
     width: 100%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -207,7 +212,7 @@ footer ul li {
     margin-left: 50px;
     border-right: 3px solid var(--secondary-color);
     padding-right: 20px;
-    height: 60px;
+    height: auto;
 }
 
 footer a:hover {
@@ -215,18 +220,105 @@ footer a:hover {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+.copy {
+    font-size: 75%;
+    justify-content: center;
+    align-content: center;
+}
+
+
 
 /* Media */
 
 @media only screen and (max-width:768px) {
     header {
+        position: fixed;
+        z-index: 1;
         flex-direction: column;
         align-content: center;
-        margin: 0px;
         padding: 10px;
+        height: auto;
     }
+
+    header h1 {
+        margin: 0px auto;
+    }
+
     header ul {
-        padding: 10px;
+        padding: 10px 0px;
+    }
+
+    nav a:hover {
+        border-bottom: none;
+    }
+
+    .img-container {
+        justify-content: space-evenly;
+        padding: 70px 0px 0px 0px;
         width: 100%;
+    }
+
+    .header-container {
+        margin: 0 auto;
+    }
+
+    .section-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .text-container {
+        border-top: 5px solid var(--primary-color);
+        border-left: none;
+        padding-left: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .project-container {
+        border-top: 5px solid var(--primary-color);
+        border-left: none;
+        margin: 0 auto;
+
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    
+    footer ul {
+        padding-top: 10px;
+        /* Need something to center and space-between links */
+    }
+
+    footer ul li {
+        font-size: 75%;
+        margin-right: 0px;
+    }
+    
+    .footer-heading {
+        margin: 0 auto;
+        border-right: none;
+        border-bottom: 1px solid var(--secondary-color);
+        padding-right: 0px;
+        padding-bottom: 3px;
+        width: 200px;
+        justify-content: center;
+        font-size: 125%;
+    }
+    
+    footer a:hover {
+        border-bottom: none
+    }
+    
+    .copy {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    nav {
+        
     }
 }
