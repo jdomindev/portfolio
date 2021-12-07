@@ -1,6 +1,6 @@
 <!-- GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+X THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 WHEN I click on the link to the section about their work
@@ -16,6 +16,7 @@ Repository contains quality readme with description, screenshot, link to deploye
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,79 +24,68 @@ Repository contains quality readme with description, screenshot, link to deploye
     <link rel="stylesheet" href="./assets/style.css">
     <title>Jose Dominguez</title>
 </head>
+
 <body>
     <header id="header">
-      <h1>Jose Dominguez</h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
+        <h1>Jose Dominguez</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1mnfOGpb86TCfqizi_fWtHnd5fVfiep90/view?usp=sharing">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section class="img-container">
-        <div>
-          <!-- <img src="" alt=""> -->
-        </div>
-        <div>
-          <!-- caption or logos -->
-        </div>
-      </section>
-      <section class="section-container">
-        <div id="about" class="header-container">
-          <h2>About Me</h2>
-        </div>
-        <div class="text-container">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, et vitae perspiciatis velit modi officia aspernatur dolore in odit eveniet rem? Facere asperiores, quisquam ipsa minima debitis maiores voluptatem quas!
-          <br>
-          <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi voluptatibus repellat quisquam hic, quibusdam ut harum corporis voluptas itaque. Pariatur labore magnam nemo numquam non consectetur facere atque inventore.
-        </div>
-      </section>
-      <section class="section-container">
-        <div id="projects" class="header-container">
-          <h2>Projects</h2>
-        </div>
-        <section class="project-container">
-          <div class="project">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, et vitae perspiciatis velit modi officia aspernatur dolore in odit eveniet rem? Facere asperiores, quisquam ipsa minima debitis maiores voluptatem quas!
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi voluptatibus repellat quisquam hic, quibusdam ut harum corporis voluptas itaque. Pariatur labore magnam nemo numquam non consectetur facere atque inventore.
-          </div>
-          <div class="project">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, et vitae perspiciatis velit modi officia aspernatur dolore in odit eveniet rem? Facere asperiores, quisquam ipsa minima debitis maiores voluptatem quas!
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi voluptatibus repellat quisquam hic, quibusdam ut harum corporis voluptas itaque. Pariatur labore magnam nemo numquam non consectetur facere atque inventore.
-          </div>
-          <div class="project">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, et vitae perspiciatis velit modi officia aspernatur dolore in odit eveniet rem? Facere asperiores, quisquam ipsa minima debitis maiores voluptatem quas!
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi voluptatibus repellat quisquam hic, quibusdam ut harum corporis voluptas itaque. Pariatur labore magnam nemo numquam non consectetur facere atque inventore.
-          </div>
-          <div class="project">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, et vitae perspiciatis velit modi officia aspernatur dolore in odit eveniet rem? Facere asperiores, quisquam ipsa minima debitis maiores voluptatem quas!
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi voluptatibus repellat quisquam hic, quibusdam ut harum corporis voluptas itaque. Pariatur labore magnam nemo numquam non consectetur facere atque inventore.
-          </div>
+        <section class="img-container">
+            <div>
+                <!-- <img src="" alt=""> -->
+            </div>
         </section>
-      </section>
+        <section id="about" class="section-container">
+            <div class="header-container">
+                <h2>About Me</h2>
+            </div>
+            <div class="text-container">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, et vitae perspiciatis velit modi officia aspernatur dolore in odit eveniet rem? Facere asperiores, quisquam ipsa minima debitis maiores voluptatem quas!
+                <br>
+                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi voluptatibus repellat quisquam hic, quibusdam ut harum corporis voluptas itaque. Pariatur labore magnam nemo numquam non consectetur facere atque inventore.
+            </div>
+        </section>
+        <section class="section-container">
+            <div id="projects" class="header-container">
+                <h2>Projects</h2>
+            </div>
+            <section class="project-container">
+                <a class="project project-background main-project" href="https://github.com/jdomindev/css-snippet-cheat-sheet" target="_blank">
+                    <h3 class="project-heading">CSS Snippet Cheat Sheet</h3>
+                </a>
+                <div class="sub-projects">
+                    <a class="project project-background sub-project" href="https://github.com/jdomindev/landing-page-project" target="_blank">
+                        <h3 class="project-heading">Landing Page</h3>
+                    </a>
+                    <a class="project project-background sub-project" href="https://github.com/jdomindev/" target="_blank">
+                        <h3 class="project-heading">Password Generator</h3>
+                    </a>
+                    <a class="project project-background sub-project" href="https://jdomindev.github.io/horiseon-refactor/" target="_blank">
+                        <h3 class="project-heading">Horiseon Refactor</h3>
+                    </a>
+                </div>
+            </section>
+        </section>
     </main>
     <footer id="contact">
-      <h2>Contact Me</h2>
-      <div>
-        <ul>
-          <li>(419) - 234 - 1084</li>
-          <li>jdomindev@gmail.com</li>
-          <li>Github</li>
-        </ul>
-      </div>
+        <h2 class="footer-heading">Contact Me</h2>
+        <div>
+            <ul>
+                <li>(419) - 234 - 1084</li>
+                <li><a href="mailto:jdomindev@gmail.com">jdomindev@gmail.com</a></li>
+                <li><a href="https://github.com/jdomindev">GitHub</a></li>
+            </ul>
+        </div>
 
     </footer>
 </body>
+
 </html>
