@@ -290,6 +290,7 @@ footer a:hover {
 
     .project-container {
         border-top: 5px solid var(--primary-color);
+        padding-top: 10px;
         border-left: none;
         margin: 0 auto;
 
