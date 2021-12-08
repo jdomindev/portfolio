@@ -11,9 +11,12 @@ During this project I learned a lot about proper html orientation and how to eff
 ## Installation
 - Not applicable
 ## Usage
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+- Deployed link: https://jdomindev.github.io/portfolio/
+- Repo Link: https://github.com/jdomindev/portfolio
+- Screenshots:
+    ![Screenshot](/assets/images/screenshot.png)
+    ![Screenshot](/assets/images/screenshot-mobile.png)
+
 ## Credits
 - Special thanks to my sister, Maria Dominguez, for all her help with the endless questions I had while making this portfolio. Check hers out at mariasdominguez.com.
 ## License

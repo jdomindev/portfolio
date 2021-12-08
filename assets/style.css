@@ -1,14 +1,14 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* border: solid 1px red; */
 }
 
 :root {
-    --primary-color: rgb(1, 58, 8);
+    --primary-color: rgb(1, 47, 6);
     --secondary-color: rgb(224, 222, 222);
     --secondary-color-opacity: rgba(15, 1, 1, 0.5);
     --tertiary-color: rgb(194, 192, 192);
+    --shadow-color: rgba(0, 15, 2, 0.5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
 }
@@ -31,20 +31,20 @@ a {
 
 header {
     display: flex;
+    z-index: 1;
     position: fixed;
     top: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
     height: auto;
-    width: 100%;
+    width: calc(100% - 80px);
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
 header h1 {
     justify-content: flex-start;
-    margin-left: 50px;
     font-size: 250%;
 }
 
@@ -54,10 +54,14 @@ header h1 {
 nav ul li {
     display: inline;
     text-decoration: none;
-    font-size: 1.25em;
-    /* margin-right: 70px; */
-    justify-content: end;
-    /* some way to center and space */
+    font-size: 20px;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0px;
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
 }
 
 nav a {
@@ -75,15 +79,15 @@ nav a:hover {
 .img-container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: calc(100% - 40px);
     height: 400px;
     padding: 20px;
     background: linear-gradient(var(--primary-color), var(--tertiary-color));
 }
 
 .img-container img {
-    border-radius: 100px;
-    box-shadow: 10px 10px 30px black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(15, 15, 15, .6);
 }
 
 
@@ -105,16 +109,15 @@ nav a:hover {
     margin-right: 10px;
     font-size: 125%;
     text-align: right;
+    width: 10%;
 }
 
 .text-container {
     display: flex;
-    text-align: center;
     align-items: center;
-    padding: 10px 20px;
-    padding-left: 40px;
+    padding: 20px 20px;
     border-left: 5px solid var(--primary-color);
-    width: 80%;
+    width: 90%;
 }
 
 .project-container {
@@ -124,7 +127,7 @@ nav a:hover {
     justify-content: space-around;
     padding: 0px 20px;
     border-left: 5px solid var(--primary-color);
-    width: 80%;
+    width: 90%;
 }
 
 .main-project {
@@ -133,7 +136,6 @@ nav a:hover {
 
 .project {
     position: relative;
-    /* flex: 2 1 300px; */
     height: 300px;
     margin: 10px;
     padding: 10px;
@@ -144,9 +146,13 @@ nav a:hover {
     background-blend-mode: multiply;
 }
 
+.project:last-child {
+    margin-bottom: 40px;
+}
+
 .project:hover {
     top: -5px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px var(--shadow-color);
 }
 
 .project-background {
@@ -184,36 +190,41 @@ nav a:hover {
 /* Footer */
 
 footer {
-    display: flex;
     bottom: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 20px;
     height: auto;
-    width: 100%;
+    width: calc(100% - 40px);
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 footer a {
     color: inherit;
 }
 
+footer ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 footer ul li {
     display: inline;
     text-decoration: none;
     font-size: 1.25em;
-    margin-right: 70px;
+    justify-content: space-between;
 }
 
-.footer-heading {
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    border-right: 3px solid var(--secondary-color);
-    padding-right: 20px;
-    height: auto;
-}
 
 footer a:hover {
     padding-bottom: 5px;
@@ -221,9 +232,10 @@ footer a:hover {
 }
 
 .copy {
-    font-size: 75%;
+    font-size: 10px;
     justify-content: center;
-    align-content: center;
+    align-self: center;
+    margin-top: 20px;
 }
 
 
@@ -235,13 +247,14 @@ footer a:hover {
         position: fixed;
         z-index: 1;
         flex-direction: column;
-        align-content: center;
-        padding: 10px;
+        justify-content: center;
+        padding: 20px 40px;
         height: auto;
+        width: calc(100% - 80px);
     }
 
     header h1 {
-        margin: 0px auto;
+        margin: 5px auto;
     }
 
     header ul {
@@ -260,6 +273,7 @@ footer a:hover {
 
     .header-container {
         margin: 0 auto;
+        width: fit-content;
     }
 
     .section-container {
@@ -271,7 +285,6 @@ footer a:hover {
         border-top: 5px solid var(--primary-color);
         border-left: none;
         padding-left: 20px;
-        text-align: center;
         margin: 0 auto;
     }
 
@@ -286,39 +299,24 @@ footer a:hover {
         flex-direction: column;
     }
     
-    
-    footer ul {
-        padding-top: 10px;
-        /* Need something to center and space-between links */
-    }
-
     footer ul li {
-        font-size: 75%;
-        margin-right: 0px;
-    }
-    
-    .footer-heading {
-        margin: 0 auto;
-        border-right: none;
-        border-bottom: 1px solid var(--secondary-color);
-        padding-right: 0px;
-        padding-bottom: 3px;
-        width: 200px;
-        justify-content: center;
-        font-size: 125%;
+        font-size: 13px;
+        margin-right: 20px;
     }
     
     footer a:hover {
         border-bottom: none
     }
-    
-    .copy {
-        display: none;
-    }
 }
 
 @media only screen and (max-width:576px) {
-    nav {
-        
+    nav ul li{
+        font-size: 15px;
     }
+
+    footer ul {
+        width: 100%;
+    }
+
+
 }
