@@ -301,7 +301,7 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 425px) {
   nav ul li {
     font-size: 15px;
   }
