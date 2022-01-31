@@ -152,7 +152,7 @@ border-radius: 20px;
 .repo-heading {
   position: absolute;
   padding: 10px;
-  bottom: 25px;
+  bottom: 20px;
   right: 25px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
