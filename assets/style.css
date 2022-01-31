@@ -149,6 +149,20 @@ border-radius: 20px;
   border-radius: 0px 10px 10px 0px;
 }
 
+.repo-heading {
+  position: absolute;
+  padding: 10px;
+  bottom: 25px;
+  right: 25px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: unset;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 30px;
+  border:none;
+  outline:none;
+}
+
 @media only screen and (max-width: 768px) {
 .header-container {
   margin: 10px auto;
