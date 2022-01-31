@@ -63,7 +63,8 @@ border-radius: 20px;
   color: var(--secondary-color);
   border-bottom: 3px solid var(--primary-color);
   width: 15%;
-  margin-left: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 .section-container {
