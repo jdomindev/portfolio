@@ -62,14 +62,28 @@ nav ul li:last-child {
   margin-right: 0px;
 }
 
+nav {
+  background-color: var(--primary-color);
+}
+
 nav a {
   color: var(--secondary-color);
 }
 
 nav a:hover {
+  color: var(--secondary-color);
+}
+
+.nav-link {
+  color: var(--secondary-color);
+}
+
+.nav-link:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
+
 
 /* Profile */
 
@@ -152,8 +166,23 @@ nav a:hover {
 }
 
 .project-background {
-  background-image: url(./images/project-image-1.jpg);
   border-radius: 10px;
+}
+
+.project-background-img-1 {
+  background-image: url(./images/project-image-1.png)
+}
+
+.project-background-img-2 {
+  background-image: url(./images/project-image-2.png)
+}
+
+.project-background-img-3 {
+  background-image: url(./images/project-image-3.png)
+}
+
+.project-background-img-4 {
+  background-image: url(./images/project-image-4.png)
 }
 
 .project-background:hover {
