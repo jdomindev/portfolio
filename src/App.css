@@ -15,7 +15,7 @@
 
 body {
   scroll-behavior: smooth;
-  /* background-color: var(--blue-2); */
+  background-color: var(--blue-2);
   font-family: var(--primary-font);
   /* padding for footer */
   padding: 0 0 82px 0;
@@ -35,4 +35,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 #content-wrap {
   flex: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .footer-copy {
+      position: static;
+  }
 }

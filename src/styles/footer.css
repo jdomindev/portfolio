@@ -1,0 +1,31 @@
+.footer, .footer-copy {
+    background-color: var(--blue-1);
+}
+
+.footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-copy {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    bottom: 0;
+}
+
+.footer-email {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.footer-email:hover {
+    color: var(--blue-3);
+}
+
