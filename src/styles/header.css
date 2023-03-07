@@ -4,7 +4,24 @@ header {
     color: white;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
     padding: 1rem 2rem;
+}
+
+.navlink {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-size-lg);
+    margin-right: 2rem;
+    margin: .5rem 2rem 0 0;
+    transition: font-size .2s linear;
+}
+
+.navlink:hover, .active {
+    font-size: var(--font-size-xxl);
+}
+
+@media screen and (min-width: 800px) {
+    .navlink:hover, .active {
+        font-size: var(--font-size-xl);
+    }
 }

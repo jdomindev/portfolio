@@ -6,6 +6,7 @@
   --blue-3: #5679e3;
   --blue-4: #444c63;
   --blue-5: #435eb0;
+  --white: #fdfdfd;
   --font-size-xs: clamp(0.8rem, 0vw + 0.8rem, 0.8rem);
   --font-size-sm: clamp(0.8rem, 0.1vw + 0.8rem, 1rem);
   --font-size-md: clamp(0.9rem, 0.3vw + 0.8rem, 1.3rem);
