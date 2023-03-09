@@ -67,8 +67,8 @@
   display: none;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .4s, visibility .5s;
-  transition: opacity .4s, visibility .4s;
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
 }
 
 .contact-icon:hover {

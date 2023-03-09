@@ -12,15 +12,15 @@ function Footer() {
         <div className='footer-contact'>
           <div className='icon-container'>
             <a className='contact-icon' href="https://www.github.com/jdomindev" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-github icon"></i>
+              <i className="fa-brands fa-github fa-fw icon"></i>
               <h3 className='icon-name'>GitHub</h3>
             </a>
             <a className='contact-icon' href="https://www.linkedin.com/in/jdomindev" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-linkedin icon"></i>
+              <i className="fa-brands fa-linkedin fa-fw icon"></i>
               <h3 className='icon-name'>LinkedIn</h3>
             </a>
             <a className='contact-icon' href="mailto:jdomindev@gmail.com" target="_blank" rel="noreferrer">
-              <i className="fa-regular fa-envelope icon" data-tooltip="Github"></i>
+              <i className="fa-regular fa-envelope fa-fw icon" data-tooltip="Github"></i>
               <h3 className='icon-name'>Email</h3>
             </a>
           </div>

@@ -4,9 +4,15 @@ header {
     color: white;
     position: sticky;
     top: 0;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
 }
 
+/* removes bootstrap padding on navbar */
+.navbar {
+    padding: 0;
+}
+
+/* navlink for mobile */
 .navlink {
     color: var(--white);
     text-decoration: none;
@@ -21,7 +27,13 @@ header {
 }
 
 @media screen and (min-width: 800px) {
+    
+    /* navlink font-size for desktop */
+    .navlink {
+        font-size: var(--font-size-md);
+    }
+    
     .navlink:hover, .active {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-lg);
     }
 }
