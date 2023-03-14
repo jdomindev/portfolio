@@ -1,10 +1,11 @@
 header {
     font-size: var(--font-size-lg);
     background-color: var(--blue-1);
-    color: white;
+    color: var(--white);
     position: sticky;
     top: 0;
     padding: 1rem 1.5rem;
+    z-index: 2;
 }
 
 /* removes bootstrap padding on navbar */

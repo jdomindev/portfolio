@@ -1,6 +1,6 @@
 :root {
   --primary-font: "Lato", Helvetica, sans-serif;
-
+  --shadow-color: hsla(0, 0%, 0%, .25);
   --blue-1: #263563;
   --blue-2: #9eb0e8;
   --blue-3: #5679e3;
@@ -24,7 +24,7 @@
 
 body {
   scroll-behavior: smooth;
-  background-color: var(--blue-2);
+  background-color: var(--blue-4);
   font-family: var(--primary-font);
   /* padding for footer */
   padding: 0 0 88px 0;
@@ -44,4 +44,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 #content-wrap {
   flex: 1;
+}
+
+@media screen and (min-width: 800px) {
+  
+  /* remove padding for footer */
+  body {
+    padding: 0 !important;
+  }
+  
 }

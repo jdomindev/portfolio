@@ -20,7 +20,7 @@ function Footer() {
               <h3 className='icon-name'>LinkedIn</h3>
             </a>
             <a className='contact-icon' href="mailto:jdomindev@gmail.com" target="_blank" rel="noreferrer">
-              <i className="fa-regular fa-envelope fa-fw icon" data-tooltip="Github"></i>
+              <i className="fa-regular fa-envelope fa-fw icon"></i>
               <h3 className='icon-name'>Email</h3>
             </a>
           </div>
