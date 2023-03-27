@@ -8,7 +8,7 @@ function About() {
       <div className="main-card">
         <h2 className="about-header">About Me</h2>
         <div className="about-layout">
-          <img className="img" src="./profile.jpg" alt="Jose Dominguez"></img>
+          <img className="img" src="./profile.png" alt="Jose Dominguez"></img>
           <div>
             <p className="about-text">
               Hey! My name is Jose, my focus is being an energetic
