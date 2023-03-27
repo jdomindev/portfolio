@@ -7,8 +7,8 @@ function Header() {
     <header>
       <nav className='navbar navbar-dark navbar-expand-lg'>
         <div className='container-fluid'>
-          <Link className='navbar-brand' to="/">
-            <h1>JD</h1>
+          <Link className='header-text' to="/">
+            <h1>Jose Dominguez</h1>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@ function Header() {
               </NavLink>
               <Link to="https://drive.google.com/file/d/1URkiU2vqHl6UBqxUWpSQpxsIAiFqyd6W/view?usp=share_link" 
                 target="_blank" rel="noreferrer"
-                className="navlink">
+                className="resume-link">
                 Resume
               </Link>
             </div>

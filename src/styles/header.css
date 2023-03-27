@@ -1,10 +1,9 @@
 header {
-    font-size: var(--font-size-lg);
     background-color: var(--blue-1);
     color: var(--white);
     position: sticky;
     top: 0;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     z-index: 2;
 }
 
@@ -13,28 +12,42 @@ header {
     padding: 0;
 }
 
-/* navlink for mobile */
+.header-text {
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--font-size-xl);
+}
+
 .navlink {
     color: var(--white);
     text-decoration: none;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     margin-right: 2rem;
     margin: .5rem 2rem 0 0;
     transition: font-size .3s linear;
 }
 
-.navlink:hover, .active {
-    font-size: var(--font-size-xxl);
+.resume-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    border: 1px solid var(--blue-2);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    width: fit-content;
 }
 
-@media screen and (min-width: 800px) {
-    
-    /* navlink font-size for desktop */
-    .navlink {
-        font-size: var(--font-size-md);
-    }
-    
-    .navlink:hover, .active {
-        font-size: var(--font-size-lg);
+.navlink:hover, .navlink:focus, .active {
+    font-size: var(--font-size-lg);
+}
+
+.resume-link:hover, .resume-link:focus {
+    background-color: var(--blue-3);
+}
+
+@media screen and (max-width: 1000px) {
+    .resume-link {
+        margin-top: 1rem;
     }
 }
+
