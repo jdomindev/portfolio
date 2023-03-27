@@ -1,0 +1,52 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 4rem auto 0;
+    color: var(--white);
+    animation: fade 3s;
+
+}
+
+.brand-statement {
+    margin-top: 3rem;
+    color: var(--blue-2);
+    opacity: 90%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.landing-header {
+    font-size: var(--font-size-xxxl);
+    font-weight: 400;
+}
+
+.landing-subheader {
+    font-size: var(--font-size-xl);
+    font-weight: 300;
+}
+
+.landing-header, .landing-subheader {
+    margin: .5rem 0 0;
+    text-align: center;
+}
+
+.img-landing {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 16/9;
+    width: clamp(17rem , 17vw, 30rem);
+    height: clamp(17rem, 17vw, 30rem);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+}
