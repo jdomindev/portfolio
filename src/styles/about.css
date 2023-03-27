@@ -1,0 +1,59 @@
+/* ABOUT ME */
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.about-header,
+.about-subheader {
+  margin: 0 0 0.75rem;
+}
+
+.about-header {
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+
+.about-subheader {
+  text-align: center;
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+}
+
+.about-text {
+  padding: 1rem 0 0.625rem;
+  font-size: var(--font-size-md);
+  font-weight: 300;
+}
+
+/* Skills */
+.tech-name {
+  font-size: var(--font-size-md);
+}
+
+@media screen and (min-width: 1200px) {
+  .about-layout {
+    flex-direction: row;
+  }
+
+  .about-text {
+    padding: 1rem 2rem 0.625rem;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-card-width {
+    width: 50%;
+  }
+}
