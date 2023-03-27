@@ -1,0 +1,138 @@
+/* PROJECT CARD */
+  .img-project {
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 16/9;
+    width: calc(100% + 2.5rem);
+    height: clamp(14rem, 17vw, 18rem);
+  }
+
+  .image-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container {
+    scroll-snap-type: y mandatory;
+  }
+
+  .main-card {
+    overflow: auto;
+    scroll-snap-align: start;
+  }
+
+  .title-container, .date-container, .project-text {
+    margin: .75rem 0;
+  }
+  
+  .date-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .project-header {
+  font-size: var(--font-size-xl);
+  }
+  
+  .project-subheader {
+    font-size: var(--font-size-lg);
+  }
+
+  .project-text {
+    font-size: var(--font-size-md);
+  }
+  
+  .font-light {
+    font-weight: 300;
+  }
+  
+  /* Tech tags */
+  
+  .tag-container {
+    flex-wrap: wrap;
+    display: flex;
+    gap: .5rem;
+    margin: 0 0 2rem;
+  }
+  
+  .tech-tag {
+    background-color: var(--blue-2);
+    color: var(--blue-1);
+    background-color: var(--blue-5);
+    color: var(--white);
+    padding: .5rem;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Button */
+  
+  .button {
+    background-color: var(--white);
+    color: var(--blue-1);
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: 10px;
+    width: 50%;
+    font-size: var(--font-size-md);
+  }
+
+  .button-text {
+    margin-right: .25rem;
+  }
+  
+  .button:hover, .button:focus {
+    background-color: var(--blue-3);
+    color: white;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: .5rem;
+    justify-content: flex-end;
+  }
+  
+  @media screen and (min-width: 1200px) {
+  .img-project {
+    margin: 1rem;
+    border-radius: 10PX;
+    max-width: 40%;
+  }
+
+  .image-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .title-container, .date-container {
+    margin: 0rem 0;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tag-container {
+    margin: 0 0 7rem;
+  }
+
+  .button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .button {
+    width: 15rem;
+  }
+
+  }

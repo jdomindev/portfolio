@@ -1,0 +1,51 @@
+/* Carousel */
+
+.carousel-wrapper {
+    position: relative;
+    max-width: clamp(14rem , 17vw, 18rem);
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -.75rem var(--shadow-color);
+  }
+
+  .carousel img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .carousel-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index: 1; */
+  }
+
+  .carousel-nav a {
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    opacity: .75;
+    transition: opacity ease .3s;
+  }
+
+  .carousel-nav a:hover {
+    opacity: 1;
+  }
+
+@media screen and (min-width: 1200px) {
+  .carousel {
+    overflow: hidden;
+  }
+}
+
+   
+  

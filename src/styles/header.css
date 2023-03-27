@@ -1,0 +1,53 @@
+header {
+    background-color: var(--blue-1);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    z-index: 2;
+}
+
+/* removes bootstrap padding on navbar */
+.navbar {
+    padding: 0;
+}
+
+.header-text {
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--font-size-xl);
+}
+
+.navlink {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    margin-right: 2rem;
+    margin: .5rem 2rem 0 0;
+    transition: font-size .3s linear;
+}
+
+.resume-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    border: 1px solid var(--blue-2);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    width: fit-content;
+}
+
+.navlink:hover, .navlink:focus, .active {
+    font-size: var(--font-size-lg);
+}
+
+.resume-link:hover, .resume-link:focus {
+    background-color: var(--blue-3);
+}
+
+@media screen and (max-width: 1000px) {
+    .resume-link {
+        margin-top: 1rem;
+    }
+}
+
