@@ -23,7 +23,6 @@
 }
 
 .about-subheader {
-  text-align: center;
   font-size: var(--font-size-lg);
   font-weight: 300;
 }
@@ -39,9 +38,27 @@
   font-size: var(--font-size-md);
 }
 
+summary {
+  color: var(--blue-2);
+}
+
+/* Animation for opening details */
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+
+
 @media screen and (min-width: 1200px) {
   .about-layout {
     flex-direction: row;
+    align-items: start;
   }
 
   .about-text {

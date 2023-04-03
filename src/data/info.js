@@ -1,9 +1,13 @@
 export const info = {
   tech: {
-    frontend: [
+    skills: [
       {
         icon: "fa-brands fa-react",
         name: "React",
+      },
+      {
+        icon: "fa-brands fa-square-js",
+        name: "JavaScript",
       },
       {
         icon: "fa-brands fa-html5",
@@ -14,12 +18,8 @@ export const info = {
         name: "CSS",
       },
       {
-        icon: "fa-brands fa-square-js",
-        name: "JavaScript",
-      },
-      {
-        icon: "fa-brands fa-square-js",
-        name: "Mapbox",
+        icon: "fa-brands fa-git-alt",
+        name: "Git",
       },
       {
         icon: "fa-brands fa-square-js",
@@ -27,28 +27,20 @@ export const info = {
       },
       {
         icon: "fa-brands fa-square-js",
-        name: "Highcharts",
+        name: "Mapbox",
       },
+     
       {
         icon: "fa-brands fa-square-js",
-        name: "D3",
+        name: "Highcharts",
       },
-      {
-        icon: "fa-brands fa-git-alt",
-        name: "Git",
-      },
-      {
-        icon: "fa-brands fa-npm",
-        name: "npm",
-      },
-    ],
-    backend: [
       {
         icon: "fa-brands fa-node-js",
         name: "Node.js",
       },
+      
       {
-        icon: "fa-brands fa-node-js",
+        icon: "fa-brands fa-npm",
         name: "Express",
       },
       {
@@ -59,13 +51,35 @@ export const info = {
         icon: "fa-brands fa-node-js",
         name: "GraphQL",
       },
-      {
-        icon: "fa-brands fa-node-js",
-        name: "MySQL",
-      },
     ],
   },
   projects: [
+    {
+      title: "Ecommerce Store Template",
+      type: "Personal Project",
+      role: "Designer | Developer",
+      date: "2023",
+      image: "ecommerce.png",
+      description:
+        "MERN stack ecommerce app where users can add items to their cart and checkout utilizing Stripe's API. Intended to be a reusable template for those who may want to add their own products.",
+      tech: [
+        "HTML",
+        "CSS",
+        "JS",
+        "React",
+        "React Router",
+        "React Bootstrap",
+        "Bootstrap",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "GraphQL",
+        "REST APIs",
+        "Cloudflare",
+      ],
+      repoLink: "https://github.com/jdomindev/ecommerce-react",
+      deployedLink: "",
+    },
     {
       title: "The WRK Group's Social Impact",
       type: "Employer: Tech Impact",
@@ -73,7 +87,7 @@ export const info = {
       date: "2023",
       image: "wrk-group.png",
       description:
-        "Data dashboard built for The WRK Group to quantify and illustrate their social impact across various domains such as housing, education, and safety.",
+        "Data visualization dashboard built for The WRK Group to quantify and illustrate their social impact across various domains such as housing, education, and safety.",
       tech: [
         "HTML",
         "CSS",
@@ -88,31 +102,31 @@ export const info = {
       repoLink: "https://github.com/de-data-lab/WRK-react",
       deployedLink: "https://wrk-group-social-impact.pages.dev/",
     },
-    {
-      title: "Tandem Fandom",
-      type: "Academic Project",
-      role: "Designer | Developer",
-      date: "2022",
-      image: "tandem.png",
-      description:
-        "MERN stack app designed for those seeking to find and match with users with similar fandom interests. Created back-end by combining a Node.js/Express.js server and MongoDB/GraphQL database and query language. Utilized a React front-end supplemented with bootstrap, react-bootstrap, and react router.",
-      tech: [
-        "HTML",
-        "CSS",
-        "JS",
-        "React",
-        "React Router",
-        ,
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "GraphQL",
-        "Bootstrap",
-        "JWT"
-      ],
-      repoLink: "https://github.com/jdomindev/tandemfandom",
-      deployedLink: "https://thawing-island-96191.herokuapp.com/",
-    },
+    // {
+    //   title: "Tandem Fandom",
+    //   type: "Academic Project",
+    //   role: "Designer | Developer",
+    //   date: "2022",
+    //   image: "tandem.png",
+    //   description:
+    //     "MERN stack app designed for those seeking to find and match with users with similar fandom interests. Created back-end by combining a Node.js/Express.js server and MongoDB/GraphQL database and query language. Utilized a React front-end supplemented with bootstrap, react-bootstrap, and react router.",
+    //   tech: [
+    //     "HTML",
+    //     "CSS",
+    //     "JS",
+    //     "React",
+    //     "React Router",
+    //     ,
+    //     "Node.js",
+    //     "Express",
+    //     "MongoDB",
+    //     "GraphQL",
+    //     "Bootstrap",
+    //     "JWT"
+    //   ],
+    //   repoLink: "https://github.com/jdomindev/tandemfandom",
+    //   deployedLink: "https://thawing-island-96191.herokuapp.com/",
+    // },
     {
       title: "Game Getter",
       type: "Academic Project",
