@@ -20,7 +20,7 @@ function Projects() {
             <div className="image-flex">
               <img
                 className="img-project"
-                src={`/projects/${project.image}`}
+                src={`/images/${project.image}`}
                 alt={project.title}
               ></img>
               <div className="text-container">
@@ -47,7 +47,7 @@ function Projects() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="button-text">Visit site</span>{" "}
+                <span className="button-text">Visit</span>{" "}
                 <i className="fa-solid fa-up-right-from-square fa-fw"></i>
               </Link>
               <Link
