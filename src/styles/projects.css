@@ -92,6 +92,11 @@
     gap: .5rem;
     justify-content: flex-end;
   }
+
+  .disabled-link {
+    pointer-events: none;
+    opacity: 40%;
+  }
   
   @media screen and (min-width: 1200px) {
   .img-project {

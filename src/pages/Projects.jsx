@@ -42,12 +42,14 @@ function Projects() {
             </div>
             <div className="button-container">
               <Link
-                className="button"
+                className={project.deployedLink === "" ? "button disabled-link" : "button"}
                 to={`${project.deployedLink}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="button-text">Visit</span>{" "}
+                <span className="button-text">
+                  {project.deployedLink === "" ? "Coming Soon" : "Visit"}
+                </span>{" "}
                 <i className="fa-solid fa-up-right-from-square fa-fw"></i>
               </Link>
               <Link
