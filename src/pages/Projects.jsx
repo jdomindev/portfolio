@@ -20,41 +20,48 @@ function Projects() {
             <div className="image-flex">
               <img
                 className="img-project"
-                src={`/projects/${project.image}`}
+                src={`/images/${project.image}`}
+                alt={project.title}
               ></img>
               <div className="text-container">
                 <div className="">
-                    <p className="project-text font-light">{project.description}</p>
-                    <div className="tag-container">
+                  <p className="project-text font-light">
+                    {project.description}
+                  </p>
+                  <div className="tag-container">
                     {project.tech.map((tech) => {
-                        return <div className="tech-tag" key={tech}>{tech}</div>;
+                      return (
+                        <div className="tech-tag" key={tech}>
+                          {tech}
+                        </div>
+                      );
                     })}
-                    </div>
+                  </div>
                 </div>
-                
               </div>
-              
             </div>
             <div className="button-container">
-                    <Link
-                        className="button"
-                        to={`${project.deployedLink}`}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <span className="button-text">Visit site</span>{" "}
-                        <i className="fa-solid fa-up-right-from-square fa-fw"></i>
-                    </Link>
-                    <Link
-                        className="button"
-                        to={`${project.repoLink}`}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <span className="button-text">Repo</span>{" "}
-                        <i className="fa-brands fa-github fa-fw"></i>
-                    </Link>
-                  </div>
+              <Link
+                className={project.deployedLink === "" ? "button disabled-link" : "button"}
+                to={`${project.deployedLink}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="button-text">
+                  {project.deployedLink === "" ? "Coming Soon" : "Visit"}
+                </span>{" "}
+                <i className="fa-solid fa-up-right-from-square fa-fw"></i>
+              </Link>
+              <Link
+                className="button"
+                to={`${project.repoLink}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="button-text">Repo</span>{" "}
+                <i className="fa-brands fa-github fa-fw"></i>
+              </Link>
+            </div>
           </div>
         );
       })}

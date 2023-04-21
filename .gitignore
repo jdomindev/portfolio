@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # ignore folder containing data
-data
+# data

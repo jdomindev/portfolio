@@ -5,7 +5,7 @@ function Landing() {
   return (
     <section className="container">
         <div className="image-container">
-            <img className="img-landing" src="/profile.jpg"></img>
+            <img className="img-landing" src="images/profile.png" alt="Jose Dominguez"></img>
             <div>
                 <h1 className="landing-header">Jose Dominguez</h1>
                 <h2 className="landing-subheader">Web Developer</h2>

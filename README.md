@@ -1,31 +1,24 @@
-# Jose Dominguez Portfolio
+# Jose Dominguez's Professional Portfolio
 ## Description
-This is my portfolio that I am using to house my projects, resume, and contact information for employers and anyone who wants to see what I'm up to.
-
-- During this project I learned a lot about proper html orientation and how to effectively use flex box and media queries to create an accessible and responsive web page.
-- Later added bootstrap to add better responsiveness and dry up the css.
-
+This is my professional portfolio that I am using to house my projects, resume, and contact information for employers and anyone who wants to see what I'm up to.
 
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Credits](#credits)
 - [License](#license)
-## Installation
-- Not applicable
-## Usage
-- Deployed link: https://jdomindev.github.io/portfolio/
-- Repo Link: https://github.com/jdomindev/portfolio
-- Screenshots:
-    ![Screenshot](/assets/images/screenshot1.png)
-    ![Screenshot](/assets/images/screenshot-mobile1.png)
+
+## Screenshots
+![Desktop Screenshot](public/screenshots/desktop-screenshot.png)
+![iPhone 12 Pro Screenshot](public/screenshots/mobile-screenshot.png)
+
 
 ## Credits
 - Special thanks to my sister, Maria Dominguez, for all her help with the endless questions I had while making this portfolio. Check hers out at mariasdominguez.com.
+
 ## License
 MIT License
 
-Copyright (c) [2021] [Jose Dominguez]
+Copyright (c) [2023] [Jose Dominguez]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
