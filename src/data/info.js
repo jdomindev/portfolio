@@ -78,7 +78,7 @@ export const info = {
         "Cloudflare",
       ],
       repoLink: "https://github.com/jdomindev/ecommerce-react",
-      deployedLink: "",
+      deployedLink: "https://ecommerce-react-acyw.onrender.com",
     },
     {
       title: "The WRK Group's Social Impact",
