@@ -21,7 +21,7 @@ function Header() {
               <NavLink to="/projects" className="navlink">
                 Projects
               </NavLink>
-              <Link to="https://drive.google.com/file/d/1URkiU2vqHl6UBqxUWpSQpxsIAiFqyd6W/view?usp=share_link" 
+              <Link to="https://drive.google.com/file/d/1Uq4vBHmOHoS665Nt9a5az1aZv2XqA0li/view?usp=sharing" 
                 target="_blank" rel="noreferrer"
                 className="resume-link">
                 Resume
