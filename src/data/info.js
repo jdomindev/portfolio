@@ -75,10 +75,10 @@ export const info = {
         "MongoDB",
         "GraphQL",
         "REST APIs",
-        "Cloudflare",
+        "Render",
       ],
       repoLink: "https://github.com/jdomindev/ecommerce-react",
-      deployedLink: "",
+      deployedLink: "https://ecommerce-react-acyw.onrender.com",
     },
     {
       title: "The WRK Group's Social Impact",
@@ -100,7 +100,7 @@ export const info = {
         "Cloudflare",
       ],
       repoLink: "https://github.com/de-data-lab/WRK-react",
-      deployedLink: "https://wrk-group-social-impact.pages.dev/",
+      deployedLink: "https://wrk-group-social-impact.pages.dev",
     },
     // {
     //   title: "Tandem Fandom",
@@ -137,7 +137,7 @@ export const info = {
         "App where you can search for the best deals for any video game you desire. Leverages RawG and Cheapshark APIs to find the best deals for video games from across the web.",
       tech: ["HTML", "CSS", "JS", "jQuery", "Materialize", "REST APIs"],
       repoLink: "https://github.com/jdomindev/game-getter",
-      deployedLink: "https://jdomindev.github.io/game-getter/",
+      deployedLink: "https://jdomindev.github.io/game-getter",
     },
   ],
 };
