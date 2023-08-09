@@ -1,9 +1,11 @@
 /* PROJECT CARD */
   .img-project {
-    object-fit: cover;
-    object-position: top;
-    width: calc(100% + 2.5rem);
-    height: clamp(14rem, 17vw, 18rem);
+    /* object-fit: cover; */
+    /* object-position: top; */
+    width: 100%;
+    max-width: 650px;
+    /* height: clamp(14rem, 17vw, 18rem); */
+    aspect-ratio: 4/3;
   }
 
   .image-flex {
