@@ -10,8 +10,8 @@
 }
 
 .brand-statement {
-    color: var(--blue-2);
-    opacity: 90%;
+    color: var(--white);
+    opacity: 70%;
     font-weight: 300;
     text-align: center;
 }

@@ -29,7 +29,10 @@ export const info = {
         icon: "fa-brands fa-square-js",
         name: "Mapbox",
       },
-     
+      {
+        icon: "fa-brands fa-square-js",
+        name: "D3",
+      },
       {
         icon: "fa-brands fa-square-js",
         name: "Highcharts",
@@ -55,11 +58,34 @@ export const info = {
   },
   projects: [
     {
+      title: "LIHTC District Comparer",
+      type: "Employer: Tech Impact",
+      role: "Designer | Developer",
+      date: "2023",
+      image: "dsha-lihtc.jpg",
+      description:
+        "This app was developed for the Delaware State Housing Authority and state of Delaware legislators to visualize variables relating to the Low-Income Housing Tax Credits program within the state of Delaware legislative districts.",
+      tech: [
+        "HTML",
+        "CSS",
+        "JS",
+        "React",
+        "MapboxGL",
+        "D3",
+        "React Select",
+        "React Router",
+        "Bootstrap",
+        "CloudFlare",
+      ],
+      repoLink: "https://github.com/de-data-lab/DSHA-react",
+      deployedLink: "https://dsha-react.pages.dev",
+    },
+    {
       title: "Ecommerce Store Template",
       type: "Personal Project",
       role: "Designer | Developer",
       date: "2023",
-      image: "ecommerce.png",
+      image: "ecommerce.jpg",
       description:
         "MERN stack ecommerce app where users can add items to their cart and checkout utilizing Stripe's API. Intended to be a reusable template for those who may want to add their own products.",
       tech: [
@@ -85,7 +111,7 @@ export const info = {
       type: "Employer: Tech Impact",
       role: "Designer | Developer",
       date: "2023",
-      image: "wrk-group.png",
+      image: "wrk-group.jpg",
       description:
         "Data visualization dashboard built for The WRK Group to quantify and illustrate their social impact across various domains such as housing, education, and safety.",
       tech: [
@@ -132,7 +158,7 @@ export const info = {
       type: "Academic Project",
       role: "Designer | Developer",
       date: "2022",
-      image: "game-getter.png",
+      image: "game-getter.jpg",
       description:
         "App where you can search for the best deals for any video game you desire. Leverages RawG and Cheapshark APIs to find the best deals for video games from across the web.",
       tech: ["HTML", "CSS", "JS", "jQuery", "Materialize", "REST APIs"],
