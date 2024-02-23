@@ -125,7 +125,8 @@ export const info = {
         "Bootstrap",
         "Cloudflare",
       ],
-      repoLink: "https://github.com/de-data-lab/WRK-react",
+      // repoLink: "https://github.com/de-data-lab/WRK-react",
+      repoLink: "",
       deployedLink: "https://wrk-group-social-impact.pages.dev",
     },
     // {
