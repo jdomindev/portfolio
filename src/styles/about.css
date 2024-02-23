@@ -6,10 +6,73 @@
   align-items: center;
 }
 
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
 .tech-container {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
+}
+
+.education-container {
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image {
+  margin: 1.5rem 1rem 0;
+  border-radius: 30px;
+  border: 2px solid var(--blue-4);
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 3/3;
+  max-width: clamp(25rem, 23vw, 35rem);
+  min-width: clamp(18rem, 19vw, 25rem);
+  /* width: clamp(14rem , 17vw, 18rem); */
+  /* height: clamp(16rem, 17vw, 23rem); */
+  image-resolution: from-image;
+}
+
+.education-icon {
+  font-size: 35px;
+  text-align: center;
+  width: 50px;
+  color: var(--blue-3);
+}
+
+.education-link {
+  display: flex;
+  /* text-decoration: none; */
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--white);
+}
+
+.education-link .education-icon {
+  text-decoration: none;
+}
+
+.education-link:first-child:hover, .education-link:first-child:focus {
+  /* text-decoration: underline; */
+  color: var(--blue-2);
+}
+
+.education-name {
+  font-size: var(--font-size-md);
+}
+.education-subname {
+  font-size: var(--font-size-sm);
+  opacity: 70%;
 }
 
 .about-header,
@@ -30,7 +93,7 @@
 .about-text {
   padding: 1rem 0 0.625rem;
   font-size: var(--font-size-md);
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 /* Skills */
@@ -45,15 +108,19 @@ summary {
 /* Animation for opening details */
 
 details[open] summary ~ * {
-  animation: sweep .5s ease-in-out;
+  animation: sweep 0.5s ease-in-out;
 }
 
 @keyframes sweep {
-  0%    {opacity: 0; margin-left: -10px}
-  100%  {opacity: 1; margin-left: 0px}
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
 }
-
-
 
 @media screen and (min-width: 1200px) {
   .about-layout {
@@ -65,12 +132,7 @@ details[open] summary ~ * {
     padding: 1rem 2rem 0.625rem;
   }
 
-  .skills-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .main-card-width {
-    width: 50%;
+  .about-container {
+    flex-wrap: nowrap;
   }
 }

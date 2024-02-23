@@ -8,7 +8,7 @@ function Projects() {
     <section className="container project-container">
       {info.projects.map((project) => {
         return (
-          <div className="main-card" key={project}>
+          <div className="main-card" key={project.title}>
             <div className="title-container">
               <h2 className="project-header">{project.title}</h2>
               <h3 className="project-subheader">{project.type}</h3>
@@ -42,19 +42,23 @@ function Projects() {
             </div>
             <div className="button-container">
               <Link
-                className={project.deployedLink === "" ? "button disabled-link" : "button"}
-                to={`${project.deployedLink}`}
+                className={
+                  project.deployedLink ? "button" : "button disabled-link"
+                }
+                to={project.deployedLink}
+                tabIndex={project.deployedLink ? null : -1}
                 target="_blank"
                 rel="noreferrer"
               >
                 <span className="button-text">
-                  {project.deployedLink === "" ? "Coming Soon" : "Visit"}
+                  {project.deployedLink ? "Visit" : "Coming Soon"}
                 </span>{" "}
                 <i className="fa-solid fa-up-right-from-square fa-fw"></i>
               </Link>
               <Link
-                className="button"
-                to={`${project.repoLink}`}
+                className={project.repoLink ? "button" : "button disabled-link"}
+                to={project.repoLink}
+                tabIndex={project.repoLink ? null : -1}
                 target="_blank"
                 rel="noreferrer"
               >
